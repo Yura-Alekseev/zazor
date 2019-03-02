@@ -206,6 +206,10 @@ header {
     background: -ms-linear-gradient(top, #505860 0%, #505860 5%, #2d3236 14%, #0d0e10 71%, #010101 100%);
     background: linear-gradient(to bottom, #505860 0%, #505860 5%, #2d3236 14%, #0d0e10 71%, #010101 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#505860', endColorstr='#010101', GradientType=0 );
+
+    -webkit-box-shadow: 2px 3px 3px 0 rgba(0,0,0,0.35);
+    -moz-box-shadow: 2px 3px 3px 0 rgba(0,0,0,0.35);
+    box-shadow: 2px 3px 3px 0 rgba(0,0,0,0.35);
 }
 
 .main-nav {
@@ -266,6 +270,241 @@ header {
     color: #0d5a8f;
     font-size: 15px;
 }
+
+/*FILTERS*/
+
+.filters {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+}
+
+.filters-auto {
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+    border: 1px solid #b6b6b7;
+    border-radius: 20px;
+
+    margin: 1% 0.5% 0;
+
+    -webkit-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.35);
+    -moz-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.35);
+    box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.35);
+}
+
+.auto-header {
+    color: #154468;
+    padding: 0 5%;
+    font-size: 14px;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.auto-header span:first-child,
+.auto-header span:last-child {
+    padding-top: 5px;
+}
+
+.auto-header span:nth-child(2) {
+    padding-top: 1px;
+    font-size: 16px;
+}
+
+.filter-auto-find {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1% 0 1% 4%;
+}
+
+.filter-auto-find-left,
+.filter-auto-find-right{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-find {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 1% 4% 2%;
+
+    font-size: 14px;
+    color: #154467;
+    font-style: italic;
+    text-decoration: underline;
+    background: transparent;
+    border: transparent;
+
+}
+
+.btn-find:hover {
+    cursor: pointer;
+}
+
+
+/*AUTO-BRAND*/
+
+.auto-brand {
+    display: flex;
+    flex-direction: row;
+}
+
+.auto-brand label {
+    font-size: 11px;
+    padding-top: 9px;
+}
+
+.filter-auto-find label > span {
+    color: #77858b;
+}
+
+.auto-brand select{
+    height: 20px;
+    width: 55%;
+    margin-left: 20px;
+    font-size: 11px;
+}
+
+/*AUTO-MODEL*/
+
+.auto-model {
+    display: flex;
+    flex-direction: row;
+}
+
+.auto-model label {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.auto-model select {
+    height: 20px;
+    width: 55%;
+    margin-top: 5px;
+    margin-left: 17px;
+    font-size: 11px;
+}
+
+/*AUTO-YEAR*/
+
+.auto-year {
+    display: flex;
+    flex-direction: row;
+}
+
+.auto-year label {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+.auto-year select {
+    height: 20px;
+    width: 30%;
+    margin-top: 6px;
+    margin-left: 17px;
+    font-size: 11px;
+}
+
+
+/*AUTO-EQUIP*/
+
+.auto-equip {
+    display: flex;
+    flex-direction: row;
+}
+
+.auto-equip label {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    padding-top: 10px;
+}
+
+.auto-equip select {
+    height: 20px;
+    width: 55%;
+    margin-top: 6px;
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+/*FILTERS-TIRE*/
+
+.filters-tire {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    border: 1px solid #b6b6b7;
+    border-radius: 20px;
+
+    margin: 1% 0.5% 0;
+
+    -webkit-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.35);
+    -moz-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.35);
+    box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.35);
+}
+
+.tire-header {
+    color: #154468;
+    padding: 2% 3%;
+    font-size: 14px;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filters-tire form {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.filters-tire-find {
+    display: flex;
+    flex-direction: column;
+}
+
+.tire-size {
+    display: flex;
+    flex-direction: row;
+}
+
+.tire-size label {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    font-size: 11px;
+}
+
+.tire-size select {
+    height: 20px;
+    width: 100%;
+    margin-top: 6px;
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*CONTENT*/
 

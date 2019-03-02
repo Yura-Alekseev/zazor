@@ -61,6 +61,167 @@
         </div>
 
 
+        <div class="filters">
+            <div class="filters-auto">
+                <div class="auto-header">
+                    <span>Диски:</span>
+                    <span>Поиск по автомобилю</span>
+                    <span>Шины:</span>
+                </div>
+                <form>
+                    <div class="filter-auto-find">
+                        <div class="filter-auto-find-left">
+                            <div class="auto-brand">
+                                <label for="auto-brand-left">Марка <span>авто:</span></label>
+                                <select id="auto-brand-left">
+                                    <option>BMW</option>
+                                    <option>Audi</option>
+                                    <option>Mercedes-Benz</option>
+                                </select>
+                            </div>
+
+                            <div class="auto-model">
+                                <label for="auto-model-left">Модель <span>автомобиля:</span></label>
+                                <select id="auto-model-left">
+                                    <option>3 series</option>
+                                    <option>5 series</option>
+                                    <option>7 series</option>
+                                    <option>A3</option>
+                                    <option>A6</option>
+                                    <option>A8</option>
+                                    <option>CLS</option>
+                                    <option>GLE</option>
+                                    <option>G</option>
+                                </select>
+                            </div>
+
+                            <div class="auto-year">
+                                <label for="auto-year-left">Год выпуска <span>автомобиля:</span></label>
+                                <select id="auto-year-left">
+                                    <option>2010</option>
+                                    <option>2011</option>
+                                    <option>2012</option>
+                                    <option>2013</option>
+                                    <option>2014</option>
+                                    <option>2015</option>
+                                    <option>2016</option>
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                </select>
+                            </div>
+
+                            <div class="auto-equip">
+                                <label for="auto-equip-left">Комплектация:</label>
+                                <select id="auto-equip-left">
+                                    <option>MINIMAL</option>
+                                    <option>COMFORT</option>
+                                    <option>BUSINESS</option>
+                                    <option>PRESTIGE</option>
+                                    <option>MAXIMAL</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="filter-auto-find-right">
+                            <div class="auto-brand">
+                                <label for="auto-brand-right">Марка <span>авто:</span></label>
+                                <select id="auto-brand-right">
+                                    <option>BMW</option>
+                                    <option>Audi</option>
+                                    <option>Mercedes-Benz</option>
+                                </select>
+                            </div>
+
+                            <div class="auto-model">
+                                <label for="auto-model-right">Модель <span>автомобиля:</span></label>
+                                <select id="auto-model-right">
+                                    <option>3 series</option>
+                                    <option>5 series</option>
+                                    <option>7 series</option>
+                                    <option>A3</option>
+                                    <option>A6</option>
+                                    <option>A8</option>
+                                    <option>CLS</option>
+                                    <option>GLE</option>
+                                    <option>G</option>
+                                </select>
+                            </div>
+
+                            <div class="auto-year">
+                                <label for="auto-year-right">Год выпуска <span>автомобиля:</span></label>
+                                <select id="auto-year-right">
+                                    <option>2010</option>
+                                    <option>2011</option>
+                                    <option>2012</option>
+                                    <option>2013</option>
+                                    <option>2014</option>
+                                    <option>2015</option>
+                                    <option>2016</option>
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                </select>
+                            </div>
+
+                            <div class="auto-equip">
+                                <label for="auto-equip-right">Комплектация:</label>
+                                <select id="auto-equip-right">
+                                    <option>MINIMAL</option>
+                                    <option>COMFORT</option>
+                                    <option>BUSINESS</option>
+                                    <option>PRESTIGE</option>
+                                    <option>MAXIMAL</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <input class="btn-find" type="submit" value="поиск...">
+            </div>
+
+            <div class="filters-tire">
+                <div class="tire-header">
+                    <span>поиск шин:</span>
+                </div>
+
+                <form>
+                    <div class="filter-tire-find">
+                        <div class="tire-size">
+                            <label for="tire-width">Размер:</label>
+                            <select id="tire-width">
+                                <option>155</option>
+                                <option>175</option>
+                                <option>195</option>
+                                <option>205</option>
+                                <option>215</option>
+                                <option>225</option>
+                                <option>235</option>
+                                <option>245</option>
+                                <option>255</option>
+                            </select>
+                        </div>
+                            <label for="tire-profile">/</label>
+                            <select id="tire-profile">
+                                <option>40</option>
+                                <option>45</option>
+                                <option>50</option>
+                                <option>55</option>
+                                <option>60</option>
+                                <option>65</option>
+                                <option>70</option>
+                                <option>75</option>
+                                <option>80</option>
+                            </select>
+
+                    </div>
+
+                </form>
+                <input class="btn-find" type="submit" value="поиск...">
+            </div>
+        </div>
+
+
         <div class="content">
 
             <div class="left-side-menu">
@@ -270,8 +431,6 @@
             </main>
 
 
-
-
             <div class="right-side-menu">
                 <div class="brands">
                     <div class="catalog-bg"><img src="img/catalog.png" alt="catalog"></div>
@@ -314,20 +473,20 @@
 
 
                     <div class="wheels">
-                            <div class="tires-checkbox">
-                                <input type="checkbox" id="wheels-1">
-                                <label for="wheels-1">Бренд 1</label>
-                            </div>
+                        <div class="tires-checkbox">
+                            <input type="checkbox" id="wheels-1">
+                            <label for="wheels-1">Бренд 1</label>
+                        </div>
 
-                            <div class="tires-checkbox">
-                                <input type="checkbox" id="wheels-2">
-                                <label for="wheels-2">Бренд 2</label>
-                            </div>
+                        <div class="tires-checkbox">
+                            <input type="checkbox" id="wheels-2">
+                            <label for="wheels-2">Бренд 2</label>
+                        </div>
 
-                            <div class="tires-checkbox">
-                                <input type="checkbox" id="wheels-3">
-                                <label for="wheels-3">Бренд 3</label>
-                            </div>
+                        <div class="tires-checkbox">
+                            <input type="checkbox" id="wheels-3">
+                            <label for="wheels-3">Бренд 3</label>
+                        </div>
                     </div>
 
                     <button class="btn-select" type="submit">выбрать</button>
