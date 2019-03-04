@@ -7,6 +7,9 @@
 }
 
 .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     margin: 0 5%;
 }
 
@@ -23,7 +26,7 @@ header {
 /*TELEPHONE*/
 
 .telephone {
-    width: 30%;
+    width: 32%;
     display: flex;
     flex-direction: row;
     margin-top: 1.5%;
@@ -64,7 +67,7 @@ header {
     flex-direction: row;
     height: 28px;
     margin-top: 1.2%;
-    width: 55%;
+    width: 53%;
 
     border-radius: 5px;
 
@@ -128,7 +131,7 @@ header {
     cursor: pointer;
 }
 
-.separator {
+.authorization > .separator {
     width: 1px;
     height: 50%;
     margin: auto 5px auto 0;
@@ -183,7 +186,933 @@ header {
     margin-top: 10px;
 }
 
+/*MAIN-NAV*/
+
+.main-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 10px;
+
+    line-height: 35px;
+    border: 1px solid #151a2e;
+    border-radius: 5px;
+
+    background: #505860;
+    background: -moz-linear-gradient(top, #505860 0%, #505860 5%, #2d3236 14%, #0d0e10 71%, #010101 100%);
+    background: -webkit-linear-gradient(top, #505860 0%, #505860 5%, #2d3236 14%, #0d0e10 71%, #010101 100%);
+    background: -o-linear-gradient(top, #505860 0%, #505860 5%, #2d3236 14%, #0d0e10 71%, #010101 100%);
+    background: -ms-linear-gradient(top, #505860 0%, #505860 5%, #2d3236 14%, #0d0e10 71%, #010101 100%);
+    background: linear-gradient(to bottom, #505860 0%, #505860 5%, #2d3236 14%, #0d0e10 71%, #010101 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#505860', endColorstr='#010101', GradientType=0 );
+
+    -webkit-box-shadow: 2px 3px 3px 0 rgba(0,0,0,0.35);
+    -moz-box-shadow: 2px 3px 3px 0 rgba(0,0,0,0.35);
+    box-shadow: 2px 3px 3px 0 rgba(0,0,0,0.35);
+}
+
+.main-nav {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #b1bcc0;
+    text-transform: uppercase;
+    padding: 0 27px;
+}
+
+.main-nav a:hover {
+    color: #fff;
+    border-radius: 20px;
+    background: #1f6887;
+    background: -moz-linear-gradient(top, #1f6887 0%, #0c3357 100%);
+    background: -webkit-linear-gradient(top, #1f6887 0%, #0c3357 100%);
+    background: -o-linear-gradient(top, #1f6887 0%, #0c3357 100%);
+    background: -ms-linear-gradient(top, #1f6887 0%, #0c3357 100%);
+    background: linear-gradient(to bottom, #1f6887 0%, #0c3357 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6887', endColorstr='#0c3357', GradientType=0 );
+}
+
+.basket {
+    margin-right: 2%;
+    width: 24%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.basket img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 7px 5px;
+    width: 25px;
+}
+
+.amount span {
+    color: #b1bcc0;
+}
+
+.amount {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.basket .count {
+    color: #0d5a8f;
+    font-size: 15px;
+}
+
+/*FILTERS*/
+
+.filters {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.filters-auto {
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+    border: 1px solid #b6b6b7;
+    border-radius: 20px;
+
+    margin: 1% 0.5% 0;
+
+    -webkit-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.35);
+    -moz-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.35);
+    box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.35);
+}
+
+.auto-header {
+    color: #154468;
+    padding: 0 5%;
+    font-size: 14px;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.auto-header span:first-child,
+ .auto-header span:last-child {
+     padding-top: 5px;
+ }
+
+.auto-header span:nth-child(2) {
+    padding-top: 1px;
+    font-size: 16px;
+}
+
+.filter-auto-find {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+.filter-auto-find-left,
+.filter-auto-find-right{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+}
+
+.btn-find {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 1% 4%;
+
+    font-size: 14px;
+    color: #154467;
+    font-style: italic;
+    text-decoration: underline;
+    background: transparent;
+    border: transparent;
+
+}
+
+.btn-find:hover {
+    cursor: pointer;
+}
+
+
+/*AUTO-BRAND*/
+
+.auto-brand {
+    display: flex;
+    flex-direction: row;
+}
+
+.auto-brand label {
+    font-size: 11px;
+    padding-top: 9px;
+}
+
+.filter-auto-find label > span {
+    color: #77858b;
+}
+
+.auto-brand select{
+    height: 20px;
+    width: 55%;
+    margin-left: 20px;
+    font-size: 11px;
+}
+
+/*AUTO-MODEL*/
+
+.auto-model {
+    display: flex;
+    flex-direction: row;
+}
+
+.auto-model label {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.auto-model select {
+    height: 20px;
+    width: 55%;
+    margin-top: 5px;
+    margin-left: 17px;
+    font-size: 11px;
+}
+
+/*AUTO-YEAR*/
+
+.auto-year {
+    display: flex;
+    flex-direction: row;
+}
+
+.auto-year label {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+.auto-year select {
+    height: 20px;
+    width: 30%;
+    margin-top: 6px;
+    margin-left: 17px;
+    font-size: 11px;
+}
+
+
+/*AUTO-EQUIP*/
+
+.auto-equip {
+    display: flex;
+    flex-direction: row;
+}
+
+.auto-equip label {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    padding-top: 10px;
+}
+
+.auto-equip select {
+    height: 20px;
+    width: 55%;
+    margin: 6px 0 0 5px;
+    font-size: 11px;
+}
+
+/*FILTERS-TIRE*/
+
+.filters-tire {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    border: 1px solid #b6b6b7;
+    border-radius: 20px;
+
+    margin: 1% 0.5% 0;
+
+    -webkit-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.35);
+    -moz-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.35);
+    box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.35);
+}
+
+.tire-header {
+    width: 100%;
+    color: #154468;
+    padding: 2% 3% 0;
+    font-size: 14px;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+.filters-tire-find {
+    display: flex;
+    width: 90%;
+}
+
+/*TIRE-SIZE*/
+
+.tire-size {
+    margin: 0 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.tire-size label {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    padding-top: 14px;
+}
+
+.tire-size .tire-profile {
+    font-size: 17px;
+    padding-top: 8px;
+}
+
+
+.tire-size select {
+    height: 20px;
+    width: 35%;
+    margin: 5px 6px 0 6px;
+    font-size: 11px;
+}
+
+/*TIRE-DIAMETER*/
+
+.tire-diameter {
+    margin: 0 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.tire-diameter label {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    padding: 13px 5px 0 30px;
+}
+
+
+.tire-diameter select {
+    height: 20px;
+    width: 25%;
+    margin: 6px 4px 2px;
+    font-size: 11px;
+}
+
+/*TIRE-SEASON*/
+
+.tire-season {
+    margin: 0 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.tire-season-checkbox-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.tire-season-checkbox {
+    display: flex;
+    flex-direction: row;
+    margin: 0 15%;
+}
+
+.tire-season-checkbox {
+    font-size: 12px;
+}
+
+.tire-season-checkbox input {
+    padding: 1px;
+}
+
+.tire-season-checkbox label {
+    padding-top: 3px;
+}
+
+.tire-season span {
+    padding-top: 2px;
+    font-size: 11px;
+}
+
+/*FILTERS-WHEELS*/
+
+.filters-wheels {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    border: 1px solid #b6b6b7;
+    border-radius: 20px;
+
+    margin: 1% 0.5% 0;
+
+    -webkit-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.35);
+    -moz-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.35);
+    box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.35);
+}
+
+.filters-wheels-left {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.wheels-header {
+    color: #154468;
+    padding: 2% 3% 0;
+    font-size: 14px;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.filters-wheels form {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.filter-tire-wheels label {
+     font-size: 11px;
+ }
+
+.filter-tire-wheels label > span {
+    color: #77858b;
+}
+
+.wheels-count-holes label > span,
+.wheels-holes-diameter label > span{
+    display: flex;
+    flex-direction: column;
+}
+
+.wheels-diameter,
+.wheels-count-holes,
+.wheels-holes-diameter{
+    display: flex;
+    flex-direction: row;
+}
+
+/*WHEELS-DIAMETER*/
+
+.wheels-diameter {
+    margin: 0 0 0 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.wheels-diameter label {
+    padding-top: 11px;
+}
+
+
+.wheels-diameter select {
+    height: 20px;
+    width: 50%;
+    font-size: 11px;
+    margin: 4px 0 0 6px;
+}
+
+/*WHEELS-COUNT-HOLES*/
+
+.wheels-count-holes {
+    margin: 0 0 0 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.wheels-count-holes label {
+    padding-top: 2px;
+}
+
+
+.wheels-count-holes select {
+    height: 20px;
+    width: 40%;
+    font-size: 11px;
+    margin: 15px 0 0 27px;
+}
+
+
+/*WHEELS-HOLES-DIAMETER*/
+
+.wheels-holes-diameter {
+    margin: 0 0 0 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.wheels-holes-diameter label {
+    padding-top: 2px;
+}
+
+
+.wheels-holes-diameter select {
+    height: 20px;
+    width: 50%;
+    font-size: 11px;
+    margin: 15px 0 0 12px;
+}
+
+/*WHEELS-SEPARATOR*/
+
+.wheels-separator {
+    display: flex;
+    width: 1px;
+    padding-top: 5px;
+}
+
+.wheels-separator span{
+    height: 100%;
+    border-left: 1px solid #bdc6ca;
+}
+
+/*WHEELS-DIAMETER-CENTER-HOLE*/
+
+.filter-wheels-right {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+}
 
 
 
 
+
+.filter-wheels-right label {
+    font-size: 11px;
+}
+
+.filter-wheels-right label > span {
+    color: #77858b;
+}
+
+.filter-wheels-right label > span,
+.filter-wheels-right label > span{
+    display: flex;
+    flex-direction: column;
+}
+
+/*WHEELS-DIAMETER-CENTER-HOLE*/
+
+.wheels-diameter-center-hole {
+    margin: 5% 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.wheels-diameter-center-hole label {
+    padding-top: 2px;
+}
+
+
+.wheels-diameter-center-hole select {
+    height: 20px;
+    width: 70%;
+    font-size: 11px;
+    margin: 3px 6px 0 4px;
+}
+
+
+/*WHEELS-RADIUS*/
+
+.wheels-radius {
+    margin: 4% 0 0 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wheels-radius label {
+    padding-top: 2px;
+}
+
+.wheels-radius label > span {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.wheels-radius select {
+    height: 20px;
+    width: 70%;
+    font-size: 11px;
+    margin: 3px 6px 0 4px;
+}
+
+/*CONTENT*/
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/*LEFT-SIDE-MENU*/
+
+.left-side-menu {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.catalog {
+    margin: 20px 0 10px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    color: #114165;
+
+    border: 1px solid #8b979c;
+    border-radius: 20px;
+
+    -webkit-box-shadow: 3px 3px 3px 0 rgba(150,150,150,1);
+    -moz-box-shadow: 3px 3px 3px 0 rgba(150,150,150,1);
+    box-shadow: 3px 3px 3px 0 rgba(150,150,150,1);
+}
+
+.catalog span{
+    margin: 4px;
+    padding: 2px;
+}
+
+.catalog-bg {
+    margin: 2px 3px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+
+    background: #1f6786;
+    background: -moz-linear-gradient(top, #1f6786 0%, #0c3357 100%);
+    background: -webkit-linear-gradient(top, #1f6786 0%, #0c3357 100%);
+    background: -o-linear-gradient(top, #1f6786 0%, #0c3357 100%);
+    background: -ms-linear-gradient(top, #1f6786 0%, #0c3357 100%);
+    background: linear-gradient(to bottom, #1f6786 0%, #0c3357 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6786', endColorstr='#0c3357', GradientType=0 );
+}
+
+.catalog-bg img {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 3px 5px;
+}
+
+
+.products-bg {
+    margin: 5px 0 5px 2%;
+    width:70%;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    text-align: center;
+    color: #114165;
+    border: 1px solid #8b979c;
+    border-radius: 20px;
+}
+
+.products-bg span {
+    margin: auto 5px;
+}
+
+.circle {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background: #114165;
+    border-radius: 50%;
+}
+
+.white-circle {
+    position: absolute;
+    top: 5.5px;
+    left: 5.5px;
+    width: 11px;
+    height: 11px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.products {
+    width: 100%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.marker-circle {
+    margin: auto 2px;
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: #79878d;
+    border-radius: 50%;
+}
+
+.marker-white-circle {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 4px;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.products a {
+    height: 14px;
+    width: 100%;
+    margin: 7px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #465961;
+}
+
+.products a:hover .marker-circle {
+    background: #313a55;
+}
+
+.products a:hover {
+    font-size: 15px;
+    color: #0c3256;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*MAIN-CONTENT*/
+
+main {
+    padding: 10px 0 25px 0;
+    margin: 20px;
+    width: 60%;
+
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    background: #e5e7e8;
+    background: -moz-linear-gradient(top, #e5e7e8 0%, #93a7b0 100%);
+    background: -webkit-linear-gradient(top, #e5e7e8 0%, #93a7b0 100%);
+    background: -o-linear-gradient(top, #e5e7e8 0%, #93a7b0 100%);
+    background: -ms-linear-gradient(top, #e5e7e8 0%, #93a7b0 100%);
+    background: linear-gradient(to bottom, #e5e7e8 0%, #93a7b0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e7e8', endColorstr='#93a7b0', GradientType=0 );
+}
+
+.product-item {
+    margin: 10px 1%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.tires-photo {
+    margin: 0 17%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 62%;
+    padding: 5px;
+    background: #ffffff;
+    border: 2px solid #b0b9bc;
+    border-radius: 10px;
+}
+
+.tires-brand {
+    font-size: 16px;
+    color: #206988;
+    font-weight: bold;
+}
+
+.tires-brand-model {
+    color: #1f2528;
+
+}
+
+.tires-value {
+    padding-top: 5px;
+    color: #114165;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/*RIGHT-SIDE-MENU*/
+
+.right-side-menu {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.right-side-menu .products-bg {
+    margin-left: 7%;
+}
+
+.brands {
+    margin: 20px 0 10px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    color: #114165;
+
+    border: 1px solid #8b979c;
+    border-radius: 20px;
+
+    -webkit-box-shadow: 3px 3px 3px 0 rgba(150,150,150,1);
+    -moz-box-shadow: 3px 3px 3px 0 rgba(150,150,150,1);
+    box-shadow: 3px 3px 3px 0 rgba(150,150,150,1);
+}
+
+.brands span {
+    margin: 4px;
+    padding: 2px;
+}
+
+.tires {
+    margin-bottom: 15px;
+}
+
+.tires-checkbox {
+    margin: 7px 9%;
+    display: flex;
+    flex-direction: row;
+}
+
+.tires-checkbox label {
+    margin: 2px 10px;
+    color: #465961;
+}
+
+.btn-select {
+    border: transparent;
+    border-radius: 20px;
+    padding: 7px 12px;
+
+    margin: 20px 9%;
+
+    color: #e5e9ea;
+    text-transform: uppercase;
+
+    background: #7a95a1;
+    background: -moz-linear-gradient(top, #7a95a1 0%, #7a95a1 1%, #1f6887 2%, #0c3357 100%);
+    background: -webkit-linear-gradient(top, #7a95a1 0%, #7a95a1 1%, #1f6887 2%, #0c3357 100%);
+    background: -o-linear-gradient(top, #7a95a1 0%, #7a95a1 1%, #1f6887 2%, #0c3357 100%);
+    background: -ms-linear-gradient(top, #7a95a1 0%, #7a95a1 1%, #1f6887 2%, #0c3357 100%);
+    background: linear-gradient(to bottom, #7a95a1 0%, #7a95a1 1%, #1f6887 2%, #0c3357 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a95a1', endColorstr='#0c3357', GradientType=0 );
+
+    -webkit-box-shadow: 3px 3px 3px 0 rgba(150,150,150,1);
+    -moz-box-shadow: 3px 3px 3px 0 rgba(150,150,150,1);
+    box-shadow: 3px 3px 3px 0 rgba(150,150,150,1);
+}
+
+.btn-select:hover {
+    cursor: pointer;
+}
+
+
+/*FOOTER*/
+
+footer {
+    height: 200px;
+
+}
+
+.brand-logo {
+    width: 60%;
+    height: 20px;
+    margin: 40px auto 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.aside-background {
+    width: 100%;
+    height: 100px;
+    background: #213a4d;
+}
+
+.bottom-nav {
+    padding: 10px 0 0 0;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: #bec6c9;
+}
+
+.bottom-nav a:hover {
+    color: #52abcb;
+}
+
+.separator {
+    width: 1px;
+    height: 60%;
+    margin: 0 10px;
+    border-left: 2px solid #8c979e;
+}
+
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    color: #7f4740;
+    font-size: 11px;
+    font-weight: bold;
+}
