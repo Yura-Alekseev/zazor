@@ -186,25 +186,24 @@
                 </div>
 
                 <form>
-                    <div class="filter-tire-find">
+                    <div class="filter-tire-find-left">
                         <div class="tire-size">
                             <label for="tire-width">Размер:</label>
                             <select id="tire-width">
                                 <option>155</option>
+                                <option>160</option>
+                                <option>165</option>
+                                <option>170</option>
                                 <option>175</option>
+                                <option>180</option>
+                                <option>185</option>
+                                <option>190</option>
                                 <option>195</option>
-                                <option>205</option>
-                                <option>215</option>
-                                <option>225</option>
-                                <option>235</option>
-                                <option>245</option>
-                                <option>255</option>
+                                <option>200</option>
                             </select>
-                        </div>
-                            <label for="tire-profile">/</label>
+
+                            <label class="tire-profile" for="tire-profile">/</label>
                             <select id="tire-profile">
-                                <option>40</option>
-                                <option>45</option>
                                 <option>50</option>
                                 <option>55</option>
                                 <option>60</option>
@@ -212,13 +211,127 @@
                                 <option>70</option>
                                 <option>75</option>
                                 <option>80</option>
+                                <option>85</option>
+                                <option>90</option>
+                                <option>95</option>
                             </select>
+                        </div>
 
+                        <div class="tire-diameter">
+                            <label for="tire-diameter">R</label>
+                            <select id="tire-diameter">
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                            </select>
+                        </div>
+
+                        <div class="tire-season">
+                            <span>Сезон:</span>
+                            <div class="tire-season-checkbox-group">
+                                <div class="tire-season-checkbox">
+                                    <input type="checkbox" id="tire-season-summer">
+                                    <label for="tire-season-summer">лето</label>
+                                </div>
+
+                                <div class="tire-season-checkbox">
+                                    <input type="checkbox" id="tire-season-winter">
+                                    <label for="tire-season-winter">зима</label>
+                                </div>
+
+                                <div class="tire-season-checkbox">
+                                    <input type="checkbox" id="tire-season-all">
+                                    <label for="tire-season-all">всесез</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
                 </form>
                 <input class="btn-find" type="submit" value="поиск...">
             </div>
+
+            <div class="filters-wheels">
+                <form>
+                    <div class="filters-wheels-left">
+                        <div class="filter-tire-wheels">
+                            <div class="wheels-header">
+                                <span>поиск дисков:</span>
+                            </div>
+
+
+                            <div class="wheels-diameter">
+                                <label for="wheels-diameter">Диаметр <span>диска:</span></label>
+                                <select id="wheels-diameter">
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                </select>
+                            </div>
+
+                            <div class="wheels-count-holes">
+                                <label for="count-holes">Количество
+                                    <span>крепёжных</span><span>отверстий:</span></label>
+                                <select id="count-holes">
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                </select>
+                            </div>
+
+                            <div class="wheels-holes-diameter">
+                                <label for="wheels-holes-diameter">Диаметр
+                                    <span>расположения<span> крепёжных</span> <span> отверстий:</span></span></label>
+                                <select id="wheels-holes-diameter">
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wheels-separator"><span></span></div>
+
+                    <div class="filter-wheels-right">
+                        <div class="wheels-diameter-center-hole">
+                            <label for="wheels-diameter-center-hole">ДЦО <span>(диаметр<span> центрального</span> <span> отверстия):</span></span></label>
+                            <select id="wheels-diameter-center-hole">
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                            </select>
+                        </div>
+
+                        <div class="wheels-radius">
+                            <label for="wheels-radius">ET <span>(вылет диска):</span></label>
+                            <select id="wheels-radius">
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <input class="btn-find" type="submit" value="поиск...">
+            </div>
+
         </div>
 
 
@@ -521,8 +634,6 @@
                 <span class="copyright">Создание сайта &copy; Global Vision</span>
             </aside>
         </footer>
-
-
     </div>
 </div>
 </body>
