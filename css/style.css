@@ -7,6 +7,7 @@
 }
 
 .wrapper {
+    max-width: 1220px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -96,25 +97,25 @@ header {
 }
 
 .username {
-    width: 42.9%;
+    width: 42%;
     border: 1px solid #7c8e98;
     border-radius: 2px;
+    padding-left: 3px;
 }
 
 .username::placeholder {
     color: #97a2a6;
-    padding-left: 3px;
 }
 
 .password {
-    width: 42.9%;
+    width: 42%;
     border: 1px solid #7c8e98;
     border-radius: 2px;
+    padding-left: 3px;
 }
 
 .password::placeholder {
     color: #97a2a6;
-    padding-left: 3px;
 }
 
 .enter {
@@ -146,10 +147,10 @@ header {
 }
 
 .recovery {
-    width: auto;
     display: flex;
     flex-direction: row;
     justify-self: flex-end;
+    width: auto;
     text-decoration: underline;
     margin-right: 5px;
     color: #bfbfbf;
@@ -158,12 +159,12 @@ header {
 /*NAVIGATION*/
 
 .navigation {
-    margin-top: 1.2%;
-    margin-left: 5%;
-    width: 8%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 1.2%;
+    margin-left: 5%;
+    width: 8%;
     border: 1px solid #c1c8cb;
     border-radius: 20px;
 
@@ -184,9 +185,9 @@ header {
 /*MAIN-NAV*/
 
 .main-menu {
-    width: 100%;
     display: flex;
     flex-direction: row;
+    width: 100%;
 
     margin-top: 10px;
 
@@ -208,9 +209,9 @@ header {
 }
 
 .main-nav {
-    width: 75%;
     display: flex;
     flex-direction: row;
+    width: 75%;
     justify-content: center;
 }
 
@@ -235,11 +236,11 @@ header {
 }
 
 .basket {
-    margin-right: 2%;
-    width: 24%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin-right: 2%;
+    width: 24%;
 }
 
 .basket img {
@@ -255,10 +256,10 @@ header {
 }
 
 .amount {
-    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 80%;
 }
 
 .basket .count {
@@ -289,14 +290,14 @@ header {
 }
 
 .auto-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
     color: #154468;
     padding: 0 5%;
     font-size: 14px;
     font-weight: bold;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .auto-header span:first-child,
@@ -316,11 +317,11 @@ header {
     margin: 1% 0;
 }
 
-.filter-auto-find-left,
-.filter-auto-find-right{
-    width: 48%;
+.filter-auto-find-wheels,
+.filter-auto-find-tires{
     display: flex;
     flex-direction: column;
+    width: 48%;
     margin-left: 4%;
 }
 
@@ -409,7 +410,6 @@ header {
     font-size: 11px;
 }
 
-
 /*AUTO-EQUIP*/
 
 .auto-equip {
@@ -448,22 +448,22 @@ header {
 }
 
 .tire-header {
+    display: flex;
+    flex-direction: row;
+
     width: 100%;
     color: #154468;
     padding: 2% 3% 0;
     font-size: 14px;
     font-weight: bold;
-
-    display: flex;
-    flex-direction: row;
 }
 
 /*TIRE-SIZE*/
 
 .tire-size {
-    margin: 0 5%;
     display: flex;
     flex-direction: row;
+    margin: 0 5%;
 }
 
 .tire-size label {
@@ -488,9 +488,9 @@ header {
 /*TIRE-DIAMETER*/
 
 .tire-diameter {
-    margin: 0 5%;
     display: flex;
     flex-direction: row;
+    margin: 0 5%;
 }
 
 .tire-diameter label {
@@ -510,9 +510,9 @@ header {
 /*TIRE-SEASON*/
 
 .tire-season {
-    margin: 0 5%;
     display: flex;
     flex-direction: row;
+    margin: 0 5%;
 }
 
 .tire-season-checkbox-group {
@@ -560,20 +560,20 @@ header {
     box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.35);
 }
 
-.filters-wheels-left {
+.filters-wheels-main {
     display: flex;
     flex-direction: column;
     width: 60%;
 }
 
 .wheels-header {
+    display: flex;
+    flex-direction: row;
+
     color: #154468;
     padding: 2% 3% 0;
     font-size: 14px;
     font-weight: bold;
-
-    display: flex;
-    flex-direction: row;
 }
 
 .filters-wheels form {
@@ -605,9 +605,9 @@ header {
 /*WHEELS-DIAMETER*/
 
 .wheels-diameter {
-    margin: 0 0 0 5%;
     display: flex;
     flex-direction: row;
+    margin: 0 0 0 5%;
 }
 
 .wheels-diameter label {
@@ -624,9 +624,9 @@ header {
 /*WHEELS-COUNT-HOLES*/
 
 .wheels-count-holes {
-    margin: 0 0 0 5%;
     display: flex;
     flex-direction: row;
+    margin: 0 0 0 5%;
 }
 
 .wheels-count-holes label {
@@ -643,9 +643,9 @@ header {
 /*WHEELS-HOLES-DIAMETER*/
 
 .wheels-holes-diameter {
-    margin: 0 0 0 5%;
     display: flex;
     flex-direction: row;
+    margin: 0 0 0 5%;
 }
 
 .wheels-holes-diameter label {
@@ -674,22 +674,22 @@ header {
 
 /*WHEELS-DIAMETER-CENTER-HOLE*/
 
-.filter-wheels-right {
-    width: 28%;
+.filter-wheels-sub {
     display: flex;
     flex-direction: column;
+    width: 28%;
 }
 
-.filter-wheels-right label {
+.filter-wheels-sub label {
     font-size: 11px;
 }
 
-.filter-wheels-right label > span {
+.filter-wheels-sub label > span {
     color: #77858b;
 }
 
-.filter-wheels-right label > span,
-.filter-wheels-right label > span{
+.filter-wheels-sub label > span,
+.filter-wheels-sub label > span{
     display: flex;
     flex-direction: column;
 }
@@ -697,16 +697,15 @@ header {
 /*WHEELS-DIAMETER-CENTER-HOLE*/
 
 .wheels-diameter-center-hole {
-    margin: 5% 0 0 25%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    margin: 5% 0 0 25%;
 }
 
 .wheels-diameter-center-hole label {
     padding-top: 2px;
 }
-
 
 .wheels-diameter-center-hole select {
     height: 20px;
@@ -718,9 +717,9 @@ header {
 /*WHEELS-RADIUS*/
 
 .wheels-radius {
-    margin: 4% 0 0 25%;
     display: flex;
     flex-direction: column;
+    margin: 4% 0 0 25%;
 }
 
 .wheels-radius label {
@@ -743,27 +742,32 @@ header {
 /*CONTENT*/
 
 .content {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*CATALOG*/
+
+.content-main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-/*LEFT-SIDE-MENU*/
-
-.left-side-menu {
-    width: 18%;
+.catalog {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 18%;
 }
 
-.catalog {
-    margin: 20px 0 10px 0;
-
+.catalog-header {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+
+    margin: 20px 0 10px 0;
+
     text-transform: uppercase;
     color: #114165;
 
@@ -775,12 +779,12 @@ header {
     box-shadow: 3px 3px 3px 0 rgba(150,150,150,1);
 }
 
-.catalog span{
+.catalog-header span{
     margin: 4px;
     padding: 2px;
 }
 
-.catalog-bg {
+.catalog-header-bg {
     margin: 2px 3px;
     width: 22px;
     height: 22px;
@@ -795,19 +799,21 @@ header {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6786', endColorstr='#0c3357', GradientType=0 );
 }
 
-.catalog-bg img {
+.catalog-header-bg img {
     display: inline-block;
     vertical-align: middle;
     padding: 3px 5px;
 }
 
 .products-bg {
-    margin: 5px 0 5px 2%;
-    width:70%;
-    padding: 2px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+
+    margin: 5px 0 5px 2%;
+    width:70%;
+    padding: 2px;
+
     text-transform: uppercase;
     text-align: center;
     color: #114165;
@@ -829,7 +835,7 @@ header {
     border-radius: 50%;
 }
 
-.white-circle {
+.inner-circle {
     width: 10px;
     height: 10px;
     background: #ffffff;
@@ -837,11 +843,12 @@ header {
 }
 
 .products {
-    width: 100%;
-    margin-left: 15%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
+    width: 100%;
+    margin-left: 15%;
 }
 
 .marker-circle {
@@ -853,7 +860,7 @@ header {
     border-radius: 50%;
 }
 
-.marker-white-circle {
+.marker-inner-circle {
     position: absolute;
     top: 2px;
     left: 2px;
@@ -864,11 +871,13 @@ header {
 }
 
 .products a {
+    display: flex;
+    flex-direction: row;
+
     height: 14px;
     width: 100%;
     margin: 7px;
-    display: flex;
-    flex-direction: row;
+
     text-decoration: none;
     color: #465961;
 }
@@ -888,16 +897,16 @@ header {
 /*MAIN-CONTENT*/
 
 main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
     padding: 10px 0 25px 0;
     margin: 20px;
     width: 60%;
 
     border-radius: 3px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
 
     background: #e5e7e8;
     background: -moz-linear-gradient(top, #e5e7e8 0%, #93a7b0 100%);
@@ -909,21 +918,24 @@ main {
 }
 
 .product-item {
-    margin: 10px 1%;
-    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    margin: 10px 1%;
+    width: 30%;
 }
 
 .tires-photo {
-    margin: 0 17%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    margin: 0 17%;
     width: 62%;
     padding: 5px;
+
     background: #ffffff;
     border: 2px solid #b0b9bc;
     border-radius: 10px;
@@ -947,25 +959,26 @@ main {
     font-style: italic;
 }
 
-/*RIGHT-SIDE-MENU*/
-
-.right-side-menu {
-    width: 18%;
+/*BRANDS*/
+.brands {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 18%;
 }
 
-.right-side-menu .products-bg {
+.brands .products-bg {
     margin-left: 7%;
 }
 
-.brands {
-    margin: 20px 0 10px 0;
-
+.brands-header {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+
+    margin: 20px 0 10px 0;
+    width: 100%;
+
     text-transform: uppercase;
     color: #114165;
 
@@ -977,7 +990,7 @@ main {
     box-shadow: 3px 3px 3px 0 rgba(150,150,150,1);
 }
 
-.brands span {
+.brands-header span {
     margin: 4px;
     padding: 2px;
 }
@@ -987,9 +1000,9 @@ main {
 }
 
 .tires-checkbox {
-    margin: 7px 9%;
     display: flex;
     flex-direction: row;
+    margin: 7px 9%;
 }
 
 .tires-checkbox label {
@@ -1024,34 +1037,36 @@ main {
     cursor: pointer;
 }
 
-/*FOOTER*/
-
-footer {
-    height: 200px;
-}
-
 .brand-logo {
-    width: 60%;
-    height: 20px;
-    margin: 40px auto 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    width: 60%;
+    height: 20px;
+    margin: 40px auto 40px;
 }
 
-.aside-background {
+/*FOOTER*/
+
+footer {
+    height: 100px;
+}
+
+.footer-background {
     width: 100%;
     height: 100px;
     background: #213a4d;
 }
 
 .bottom-nav {
-    padding: 10px 0 0 0;
-    height: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
+
+    padding: 10px 0 0 0;
+    height: 25px;
 }
 
 .bottom-nav a {
@@ -1074,6 +1089,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
     margin: 0 auto;
     color: #7f4740;
     font-size: 11px;
